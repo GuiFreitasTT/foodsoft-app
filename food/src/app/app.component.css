@@ -1,6 +1,35 @@
 .navbar{
-  background-color: aquamarine;
-  height: 100px;
+  background-color: rgb(240, 238, 234);
+  height: 50px;
   text-align: center;
   padding-top: 40px;
 }
+
+.container{
+  height: 600px;
+  background-color: #EAA339;
+  display: flex;
+  justify-content: center;
+}
+
+.box{
+  position: absolute;
+width: 280px;
+height: 253px;
+left: calc(50% - 280px/2 - 3px);
+top: 159px;
+
+background: #997006;
+border-radius: 15px;
+}
+
+input{
+  position: absolute;
+  width: 250px;
+  height: 40px;
+  left: 52px;
+  top: 39px;
+  background: #EAA339;
+  border-radius: 30px;
+}
+
