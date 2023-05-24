@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RestaurantService } from 'src/restaurant.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-restaurants-component',
@@ -7,7 +8,7 @@ import { RestaurantService } from 'src/restaurant.service';
   styleUrls: ['./restaurants-component.component.css']
 })
 export class RestaurantsComponent {
-dados : any;
+dados: any[] = [];
 
 constructor(private serviceRestaurante: RestaurantService) { }
 
@@ -16,13 +17,17 @@ constructor(private serviceRestaurante: RestaurantService) { }
   }
 
   buscarDados() {
-    this.serviceRestaurante.getDados().subscribe(
-      data => {
-        this.dados = data;
+    this.serviceRestaurante.getDados().pipe(
+      map((data: any[]) => {
+        return data.map((item: any) => item);
+      })
+    ).subscribe(
+      mappedData => {
+        this.dados = mappedData;
       },
       error => {
         console.error('Ocorreu um erro:', error);
       }
     );
-  }
+}
 }

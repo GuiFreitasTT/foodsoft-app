@@ -30,11 +30,11 @@ a{
 
 .box-two{
   position: absolute;
-  width: 280px;
-  height: 253px;
-  left: 12%;
+  width: 300px;
+  height: 500px;
+  left: 10%;
   top: 10%;
-  background: #fffcf5;
+  background: #fdfdfde1;
   border-radius: 15px;
 }
 
@@ -60,39 +60,40 @@ h4{
   color: #FFFFFF;
 }
 
-.lupa-busca{
-  position: absolute;
-  width: 80px;
-  left: 260px;
-  top: 45px;
+.icone{
+  font-size: 40px;
 }
 
-.imgs1{
-  position: absolute;
-  width: 80px;
-  left: 80px;
-  top: 90px;
+.list-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.imgs2{
-  position: absolute;
-  width: 80px;
-  left: 220px;
-  top: 95px;
+.list-container li {
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
+  padding: 10px;
 }
 
-.imgs3{
-  position: absolute;
-  width: 80px;
-  left: 220px;
-  top: 190px;
+.list-item-type{
+  text-align: end;
+}
+.list-item-line {
+  left: 0;
+  bottom: -5px; /* Ajuste o valor para controlar a posição da linha */
+  width: 80%;
+  height: 1px;
+  background-color: #0c0c0c; /* Cor da linha */
+  border: none;
 }
 
-.imgs4{
-  position: absolute;
-  width: 80px;
-  left: 80px;
-  top: 190px;
+li{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
 }
-
 

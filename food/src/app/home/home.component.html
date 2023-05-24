@@ -3,7 +3,6 @@
   <div class="lupa-busca">
     <img src="../assets/imgs/lupa.png">
   </div>
-
 </div>
 <div class="container">
   <div class="box">
@@ -11,22 +10,30 @@
   </div>
   <div class="imgs-all">
     <div class="imgs1">
-      <img src="../assets/imgs/arabia.png">
+      <div class="background">
+        <img src="../assets/imgs/arabia.png" (click)="resArabe()">
+      </div>
     </div>
     <div class="imgs2">
-      <img src="../assets/imgs/china.png">
+      <div class="background">
+          <img src="../assets/imgs/china.png" (click)="resJaponese()">
+      </div>
     </div>
     <div class="imgs3">
-      <img src="../assets/imgs/brazil.png">
+      <div class="background">
+        <img src="../assets/imgs/brazil.png" (click)="resBrazil()">
+      </div>
     </div>
     <div class="imgs4">
-      <img src="../assets/imgs/mexico.png">
+      <div class="background">
+        <img src="../assets/imgs/mexico.png" (click)="resMexico()">
+      </div>
     </div>
 </div>
 </div>
   <div class="container-two">
     <div class="box-two">
-      <ul  class="list-container" *ngFor="let item of dados | slice:0:5"  >
+      <ul class="list-container" *ngFor="let item of dados | slice:0:5"  >
         <li class="list-item-name"> {{item.name}}</li>
         <li class="list-item-type">{{ item.type.toLowerCase() }}</li>
         <hr class="list-item-line"/>

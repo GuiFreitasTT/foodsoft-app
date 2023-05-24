@@ -1,8 +1,14 @@
   <div class="container-two">
     <ul>
-      <li><a routerLink="/home">Voltar para a página inicial</a></li>
+      <div class="icone">
+        <mat-icon routerLink="/home" inline="true">keyboard_backspace</mat-icon>
+      </div>
     </ul>
-    <div class="box-two">
-      {{dados | json}}
+     <div class="box-two">
+      <ul class="list-container" *ngFor="let item of dados"  >
+        <li class="list-item-name"> {{item.name}}</li>
+        <li class="list-item-type">{{ item.type.toLowerCase() }}</li>
+        <hr class="list-item-line"/>
+      </ul>
     </div>
 </div>

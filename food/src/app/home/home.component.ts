@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RestaurantService } from 'src/restaurant.service';
 import { map } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,10 @@ export class HomeComponent {
 
   dados: any[] = [];
 
-  constructor(private serviceRestaurante: RestaurantService) { }
+  constructor(
+    private serviceRestaurante: RestaurantService,
+    private router: Router
+    ) { }
 
   ngOnInit(){
     this.buscarDados();
@@ -32,6 +36,21 @@ export class HomeComponent {
     );
 }
 
+resArabe(){
+  this.router.navigate(['/restaurantes/arabe']);
+}
+
+resJaponese(){
+  this.router.navigate(['/restaurantes/japonese']);
+}
+
+resMexico(){
+  this.router.navigate(['/restaurantes/mexico']);
+}
+
+resBrazil(){
+  this.router.navigate(['/restaurantes/brazil']);
+}
 
 }
 

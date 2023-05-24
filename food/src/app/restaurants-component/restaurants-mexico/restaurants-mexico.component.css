@@ -1,0 +1,39 @@
+.container{
+  width: 380px;
+  height: 680px;
+  background: #EAA339;
+}
+
+.box{
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  margin-left: 12px;
+  top: 10%;
+  background: #997006;
+  border-radius: 15px;
+}
+
+a{
+  font-size: 20px;
+  text-decoration:none;
+  color: rgb(255, 255, 255);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.icone{
+  font-size: 40px;
+}
+
+h4{
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+  color: white;
+  text-align: center;
+}
