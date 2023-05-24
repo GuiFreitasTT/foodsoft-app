@@ -1,0 +1,98 @@
+a{
+  text-decoration:none;
+  color: inherit;
+}
+
+.navbar{
+  position: absolute;
+  width: 380px;
+  height: 118px;
+  top: 0px;
+  background: #FEFEFE;
+}
+
+.container-two{
+  position: absolute;
+  width: 380px;
+  height: 700px;
+  background: #997006;
+}
+
+.box{
+  position: absolute;
+  width: 280px;
+  height: 253px;
+  left: 12%;
+  top: 10%;
+  background: #997006;
+  border-radius: 15px;
+}
+
+.box-two{
+  position: absolute;
+  width: 280px;
+  height: 253px;
+  left: 12%;
+  top: 10%;
+  background: #fffcf5;
+  border-radius: 15px;
+}
+
+input{
+  padding-left: 20px;
+  position: absolute;
+  width: 230px;
+  height: 40px;
+  left: 60px;
+  top: 39px;
+  background: #EAA339;
+  border-radius: 30px;
+}
+
+h4{
+  padding-top: 20px;
+  font-family: 'Inria Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.lupa-busca{
+  position: absolute;
+  width: 80px;
+  left: 260px;
+  top: 45px;
+}
+
+.imgs1{
+  position: absolute;
+  width: 80px;
+  left: 80px;
+  top: 90px;
+}
+
+.imgs2{
+  position: absolute;
+  width: 80px;
+  left: 220px;
+  top: 95px;
+}
+
+.imgs3{
+  position: absolute;
+  width: 80px;
+  left: 220px;
+  top: 190px;
+}
+
+.imgs4{
+  position: absolute;
+  width: 80px;
+  left: 80px;
+  top: 190px;
+}
+
+

@@ -2,15 +2,14 @@ import { Component } from '@angular/core';
 import { RestaurantService } from 'src/restaurant.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-restaurants-component',
+  templateUrl: './restaurants-component.component.html',
+  styleUrls: ['./restaurants-component.component.css']
 })
-export class AppComponent {
-  title = 'food';
-  dados: any;
+export class RestaurantsComponent {
+dados : any;
 
-  constructor(private serviceRestaurante: RestaurantService) { }
+constructor(private serviceRestaurante: RestaurantService) { }
 
   ngOnInit(){
     this.buscarDados();
@@ -20,12 +19,10 @@ export class AppComponent {
     this.serviceRestaurante.getDados().subscribe(
       data => {
         this.dados = data;
-        console.log(this.dados);
       },
       error => {
         console.error('Ocorreu um erro:', error);
       }
     );
   }
-
 }

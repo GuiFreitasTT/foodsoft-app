@@ -1,0 +1,147 @@
+.navbar{
+  position: absolute;
+  width: 380px;
+  height: 118px;
+  top: 0px;
+  background: #FEFEFE;
+}
+
+.container{
+  position: absolute;
+  width: 380px;
+  height: 450px;
+  top: 118px;
+  background: #EAA339;
+}
+
+.container-two{
+  position: absolute;
+  width: 380px;
+  height: 400px;
+  top: 450px;
+  background: #997006;
+}
+
+.list-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
+  padding: 10px;
+}
+
+.list-item-type{
+  text-align: end;
+}
+.list-item-line {
+  left: 0;
+  bottom: -5px; /* Ajuste o valor para controlar a posição da linha */
+  width: 80%;
+  height: 1px;
+  background-color: #0c0c0c; /* Cor da linha */
+  border: none;
+}
+
+a{
+  position: absolute;
+  left: 140px;
+  top: 10px;
+  font-size: 20px;
+  text-decoration:none;
+  color: rgb(255, 255, 255);
+  font-family:Arial, Helvetica, sans-serif;
+  border: 2px solid;
+  padding: 2px;
+}
+
+.botao{
+  position: absolute;
+  top: 750px;
+  width: 380px;
+}
+
+.box{
+  position: absolute;
+  width: 280px;
+  height: 253px;
+  left: 12%;
+  top: 10%;
+  background: #997006;
+  border-radius: 15px;
+}
+
+.box-two{
+  position: absolute;
+  width: 280px;
+  height: 253px;
+  left: 12%;
+  top: 10%;
+  background: #fffcf5;
+  border-radius: 15px;
+}
+
+input{
+  padding-left: 20px;
+  position: absolute;
+  width: 230px;
+  height: 40px;
+  left: 60px;
+  top: 39px;
+  background: #EAA339;
+  border-radius: 30px;
+}
+
+h4{
+  padding-top: 20px;
+  font-family: 'Inria Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.lupa-busca{
+  position: absolute;
+  width: 80px;
+  left: 270px;
+  top: 49px;
+}
+
+.imgs1{
+  position: absolute;
+  width: 80px;
+  left: 80px;
+  top: 90px;
+}
+
+.imgs2{
+  position: absolute;
+  width: 80px;
+  left: 220px;
+  top: 95px;
+}
+
+.imgs3{
+  position: absolute;
+  width: 80px;
+  left: 220px;
+  top: 190px;
+}
+
+.imgs4{
+  position: absolute;
+  width: 80px;
+  left: 80px;
+  top: 190px;
+}
+
+
