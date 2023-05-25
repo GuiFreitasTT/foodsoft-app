@@ -8,24 +8,6 @@ import { RestaurantService } from 'src/restaurant.service';
 })
 export class AppComponent {
   title = 'food';
-  dados: any;
-
   constructor(private serviceRestaurante: RestaurantService) { }
-
-  ngOnInit(){
-    this.buscarDados();
-  }
-
-  buscarDados() {
-    this.serviceRestaurante.getDados().subscribe(
-      data => {
-        this.dados = data;
-        console.log(this.dados);
-      },
-      error => {
-        console.error('Ocorreu um erro:', error);
-      }
-    );
-  }
 
 }

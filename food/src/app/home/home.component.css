@@ -1,3 +1,10 @@
+.navbar{
+  background-color: #997006;
+  height: 200px;
+  width: 380px;
+}
+
+
 .container{
   position: absolute;
   width: 380px;
@@ -43,19 +50,21 @@
 
 a{
   position: absolute;
-  left: 140px;
+  left: 135px;
   top: 10px;
   font-size: 20px;
   text-decoration:none;
   color: rgb(255, 255, 255);
   font-family:Arial, Helvetica, sans-serif;
-  border: 2px solid;
-  padding: 2px;
+  border: 1px solid;
+  border-radius: 14px;
+  padding: 7px;
 }
+
 
 .botao{
   position: absolute;
-  top: 750px;
+  top: 760px;
   width: 380px;
 }
 
@@ -72,19 +81,19 @@ a{
 .box-two{
   position: absolute;
   width: 280px;
-  height: 253px;
+  height: 260px;
   left: 12%;
   top: 10%;
-  background: #fffcf5;
+  background: rgb(255, 255, 255);
   border-radius: 15px;
 }
 
 input{
   padding-left: 20px;
   position: absolute;
-  width: 230px;
+  width: 250px;
   height: 40px;
-  left: 60px;
+  left: 50px;
   top: 39px;
   background: #EAA339;
   border-radius: 30px;
@@ -94,11 +103,25 @@ input:focus {
   outline: none;
 }
 
+.input-field::placeholder {
+  color: white; /* Cor do texto do placeholder */
+}
+
 h4{
   font-weight: bold;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h3{
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+  font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
@@ -165,7 +188,7 @@ h4{
 
 li{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
 }
 

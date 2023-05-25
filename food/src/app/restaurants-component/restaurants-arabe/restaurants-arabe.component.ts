@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { map } from 'rxjs';
+import { RestaurantService } from 'src/restaurant.service';
 
 @Component({
   selector: 'app-restaurants-arabe',
@@ -7,4 +9,29 @@ import { Component } from '@angular/core';
 })
 export class RestaurantsArabeComponent {
 
+  dados: any[] = [];
+
+  constructor(
+    private serviceRestaurante: RestaurantService,
+    ) { }
+
+ngOnInit(){
+  this.buscarDados();
 }
+
+buscarDados() {
+  this.serviceRestaurante.getDados().pipe(
+    map((data: any[]) => {
+      return data.filter((item: any) => item.type === 'ARABIC');
+    })
+  ).subscribe(
+    filteredData => {
+      this.dados = filteredData;
+    },
+    error => {
+      console.error('Ocorreu um erro:', error);
+    }
+  );
+  }
+}
+

@@ -1,12 +1,12 @@
 <div class="navbar">
-  <input type="text" placeholder=" digite o nome do restaurante">
+  <input type="text" class="input-field" placeholder=" digite o nome do restaurante" >
   <div class="lupa-busca">
     <img src="../assets/imgs/lupa.png">
   </div>
 </div>
 <div class="container">
+  <h4>PROCURA RÁPIDA</h4>
   <div class="box">
-    <h4>PROCURA RÁPIDA</h4>
   </div>
   <div class="imgs-all">
     <div class="imgs1">
@@ -32,6 +32,7 @@
 </div>
 </div>
   <div class="container-two">
+    <h3>TOP 5 RESTAURANTES DA SEMANA</h3>
     <div class="box-two">
       <ul class="list-container" *ngFor="let item of dados | slice:0:5"  >
         <li class="list-item-name"> {{item.name}}</li>
