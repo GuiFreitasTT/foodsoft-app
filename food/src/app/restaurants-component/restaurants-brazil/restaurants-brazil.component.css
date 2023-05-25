@@ -14,6 +14,12 @@
   border-radius: 15px;
 }
 
+.box-two{
+  background-color: rgb(255, 255, 255);
+  height: 380px;
+  margin: 20px;
+}
+
 a{
   font-size: 20px;
   text-decoration:none;
@@ -36,4 +42,31 @@ h4{
 p{
   text-align: center;
   color: white;
+}
+
+.list-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  flex: 0 0 calc(33.33% - 10px);
+  margin: 5px;
+  padding: 10px;
+}
+
+.list-item-type{
+  text-align: end;
+}
+.list-item-line {
+  left: 0;
+  bottom: -5px;
+  width: 80%;
+  height: 1px;
+  background-color: #0c0c0c;
+  border: none;
 }

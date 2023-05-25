@@ -51,10 +51,10 @@ input{
 
 h4{
   padding-top: 20px;
-  font-family: 'Inria Sans';
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
@@ -85,7 +85,7 @@ h4{
 .list-item-line {
   left: 0;
   bottom: -5px; /* Ajuste o valor para controlar a posição da linha */
-  width: 80%;
+  width: 90%;
   height: 1px;
   background-color: #0c0c0c; /* Cor da linha */
   border: none;

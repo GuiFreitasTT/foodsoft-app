@@ -9,5 +9,12 @@
         <P>O MELHOR DA CULINÁRIA MEXICANA</P>
       </div>
     </div>
+    <div class="box-two">
+      <ul class="list-container" *ngFor="let item of dados "  >
+        <li class="list-item-name"> {{item.name}}</li>
+        <li class="list-item-type">{{ item.type.toLowerCase() }}</li>
+        <hr class="list-item-line"/>
+      </ul>
+    </div>
   </div>
 </div>

@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { RestaurantsArabeComponent } from './restaurants-component/restaurants-arabe/restaurants-arabe.component';
 import { RestaurantsMexicoComponent } from './restaurants-component/restaurants-mexico/restaurants-mexico.component';
 import { RestaurantsBrazilComponent } from './restaurants-component/restaurants-brazil/restaurants-brazil.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RestaurantsBrazilComponent } from './restaurants-component/restaurants-
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
